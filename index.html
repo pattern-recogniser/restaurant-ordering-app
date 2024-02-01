@@ -19,14 +19,39 @@
     
     
             </menu>
-            <!-- name: "Pizza",
-            ingredients: ["pepperoni", "mushrom", "mozarella"],
-            id: 0,
-            price: 14,
-            emoji: "🍕" -->
-            <div class="message">
-                <p>Thanks James, your order is on the way!</p>
+            <div class="order-summary">
+                <h2 class="order-summary--title">Your order</h2>
+                <div class="order-summary--detail">
+                    <h2>Pizza <span class="remove-label">remove</span></h2>
+                    <h2>$14</h2>
+                </div>
+                <div class="order-summary--detail">
+                    <h2>Beer <span class="remove-label">remove</span></h2>
+                    <h2>$12</h2>
+                </div>
+                <div class="order-summary--detail order-summary--total">
+                    <h2>Total price:</h2>
+                    <h2>$27</h2>
+                </div>
+
+                <!-- <menu_item>
+                    <p class="emoji-icon">${emoji}</p>
+                    <div class="menu-info">
+                        <h2>${name}</h2>
+                        <p class="inner-p">${ingredients}</p>
+                        <h3>\$${price}</h3>
+                    </div>
+                    <button>
+                        <img src="images/add-btn.png" alt="add-btn">
+                    </button>
+        
+                </menu_item> -->
+
+
             </div>
+            <!-- <div class="message">
+                <p>Thanks James, your order is on the way!</p>
+            </div> -->
         </div>
 
         <script src="index.js" type="module"> </script>

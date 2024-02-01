@@ -18,10 +18,10 @@ function render(){
                 <img src="images/add-btn.png" alt="add-btn">
             </button>
 
-            </menu_item>
+        </menu_item>
         `
     }
     menuEl.innerHTML = htmlString
 }
-// render()
+render()
 
