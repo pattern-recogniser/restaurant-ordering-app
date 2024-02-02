@@ -15,6 +15,7 @@ body {
 #app-container{
     background-color: #ffffff;
     margin-top: 0;
+    padding-bottom: 600px;
     padding-top: 0;
     /* width: 505px; */
     /* margin: 0 auto; */
@@ -74,7 +75,23 @@ h3{
 }
 
 button{
-    all:unset
+    all:unset;
+    cursor: pointer;
+
+}
+
+.green-btn{
+    background-color: #16DB99;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 7px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 
 .message{
@@ -83,7 +100,10 @@ button{
     justify-content: center;
     height: 120px;
     width: 504px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    margin-top: 50px;
     color: #065F46;
     background-color: #ECFDF5;
     text-align: center;
@@ -92,13 +112,21 @@ button{
 
 .order-summary{
     margin-top: 50px;
+    width: 504px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .order-summary--detail{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 15px;
+    margin: 15px 5px;
+}
+
+.order-summary--detail h2{
+    margin: 0;
 }
 .order-summary--title{
     text-align: center;
@@ -110,7 +138,52 @@ button{
     line-height: 24px;
 }
 .order-summary--total{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     border-top: 2px solid #393333;
+    margin-bottom: 25px;
+    margin-top: 10px
+}
+
+#card-details{
+    width: 524px;
+    height: 524px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    visibility: visible;
+    position: fixed;
+ /* Centering div */
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    padding: 30px;
+    box-shadow: 10px 10px 15px grey;
+    background-color: #ffffff;
+
+}
+
+input{
+    width: 100%;
+    border: 1.3px solid #757575;
+    padding: 25px 10px;
     margin-bottom: 15px;
-    padding-left: 15px;
+    border-radius: 3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+form h2{
+    font-size: 24px;
+    font-weight: 700;;
+}
+
+.hidden {
+    visibility: hidden;
 }

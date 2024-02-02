@@ -1,6 +1,31 @@
 import { menuArray } from '/data.js'
 
 const menuEl = document.getElementsByTagName("menu")[0]
+const orderBtn = document.getElementById("order-btn")
+const modal = document.getElementById("card-details")
+const payBtn = document.getElementById("pay-btn")
+
+render()
+modal.style.visibility = "hidden"
+
+orderBtn.addEventListener("click", handlePaymentPage)
+
+payBtn.addEventListener("click", handlePaymentCompletion)
+
+function handlePaymentPage(){
+    modal.style.visibility = "visible"
+    
+}
+
+
+function handlePaymentCompletion(event){
+    event.preventDefault()
+    const orderSummaryDiv = document.getElementsByClassName("order-summary")[0]
+    orderSummaryDiv.remove()
+    const messageDiv = document.getElementsByClassName("message")[0]
+    messageDiv.classList.remove("hidden")
+    modal.style.visibility = "hidden"
+}
 
 function render(){
     let htmlString = ""
@@ -23,5 +48,9 @@ function render(){
     }
     menuEl.innerHTML = htmlString
 }
-render()
 
+
+
+// const orderSummaryDiv = document.getElementsByClassName("order-summary")[0]
+// console.log(orderSummaryDiv)
+// orderSummaryDiv.style.visibility = "hidden"
